@@ -1,0 +1,23 @@
+[project]
+name = "agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Kazim Ali", email = "kazim.ali@europace.de" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "requests",
+    "strands-agents (>=1.2.0,<2.0.0)",
+    "strands-agents-tools (>=0.2.3,<0.3.0)",
+    "mem0ai (>=0.1.115,<0.2.0)",
+    "streamlit (>=1.28.0,<2.0.0)"
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["news_curator_agent"]
