@@ -52,6 +52,7 @@ In the second terminal:
 
 ```bash
 cd agent
+awsume <aws_role>
 uv pip install .
 python run_streamlit.py
 ```
